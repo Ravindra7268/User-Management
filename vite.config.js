@@ -6,6 +6,7 @@ export default {
   server: {
     // Render expects the server to listen on all interfaces (0.0.0.0)
     // and on the dynamically assigned $PORT.
+    allowedHosts: 'all',
     host: '0.0.0.0',
     port: process.env.PORT ? Number(process.env.PORT) : 5173,
     strictPort: true,
